@@ -1,0 +1,23 @@
+{
+  "name": "hello",
+  "version": "1.1.0",
+  "description": "test",
+  "main": "index.js",
+  "dependencies": {
+    "electron": "^2.0.3",
+    "eve": "^0.5.4",
+    "flowchart": "^1.2.0",
+    "flowchart.js": "^1.11.3",
+    "jquery": "^3.3.1",
+    "jquery.flowchart": "^1.1.0",
+    "urlencode": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.25"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/electron.cmd ./srcjs/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

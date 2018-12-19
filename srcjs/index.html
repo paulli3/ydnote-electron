@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Pannonia - premium responsive admin template by Eugene Kopyov</title>
+<link href="temp/css/main.css" rel="stylesheet" type="text/css" />
+<script src="markdown/js/jquery.js"></script>
+<script>if (typeof module === 'object') {window.jQuery = window.$ = module.exports;};</script>
+<script src="./src/rendersrc/event.js"></script>
+<script src="./temp/js/files/functions.js"></script>
+<!--[if IE 8]><link href="css/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link href='./temp/js/plugins/scrollBar.css' rel='stylesheet' type='text/css'>
+<script src="./temp/js/plugins/scrollBar.js"></script>
+<style>
+#top{-webkit-app-region: drag;}
+body,#sidebar{
+    overflow: hidden;
+}
+/* html{
+    background: transparent;
+}
+
+
+
+.shadow {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            position: absolute;
+            width: 99%;
+            height: 99%;
+            border-radius: 5px;
+            margin: 0.5%;
+            background: #FFF;
+        } 
+*/
+</style>
+</head>
+
+<body >
+    <!-- <img src="http://note.youdao.com/yws/res/6705/FA78139030A847F28B902799AE91E87F"> -->
+    <div class="shadow">
+        <!-- Fixed top -->
+        <div id="top">
+            <div class="fixed">
+                <a href="index.html" title="" class="logo"><img src="img/logo.png" alt="" /></a>
+                <ul class="top-menu">
+                    <li><a class="fullview"></a></li>
+                    <li><a class="showmenu"></a></li>
+                    <li><a href="#" title="" class="messages"><i class="new-message"></i></a></li>
+                    <li class="dropdown">
+                        <a class="user-menu" data-toggle="dropdown"><img src="img/userpic.png" alt="" /><span>Howdy, Eugene! <b class="caret"></b></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" title=""><i class="icon-user"></i>Profile</a></li>
+                            <li><a href="#" title=""><i class="icon-inbox"></i>Messages<span class="badge badge-info">9</span></a></li>
+                            <li><a href="#" title=""><i class="icon-cog"></i>Settings</a></li>
+                            <li><a href="#" title=""><i class="icon-remove"></i>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /fixed top -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-tabs">
+                <div id="general">
+                    <!-- Main navigation -->
+                    <ul class="navigation widget" id="dirlist">
+                      
+                    </ul>
+                    <!-- /main navigation -->
+                </div>
+            </div>
+        </div>
+        <div id="sidebar1" class="sidebar">
+            <div class="sidebar-tabs">
+                <div id="general">
+                    <!-- Main navigation -->
+                    <ul class="navigation widget" id="dirlist1">
+                        
+                        
+                    </ul>
+                    <!-- /main navigation -->
+                </div>
+            </div>
+        </div><!--sidebar1-->
+        <div id="content">
+            <div class="wrapper">
+                <div class="actions-wrapper" id="body">
+
+                </div><!--actions-wrapper-->
+            </div><!--wrapper-->
+        </div><!--content-->
+    </div><!--main-->
+
+</body>
+</html>
+<script>
+function setHeight(){
+    $("#sidebar").height($("body").height() - $("#top").height());
+    $("#sidebar1").height($("body").height() - $("#top").height());
+}
+setHeight();
+window.onresize = setHeight;
+
+</script>
